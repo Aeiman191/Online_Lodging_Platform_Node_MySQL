@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="​hosts">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>update</title>
+    <link rel="stylesheet" href="/styles/updatePlaces.css" media="screen">
+    <meta name="generator" content="Nicepage 4.10.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body class="u-body u-xl-mode">
+    <header class="u-clearfix u-header u-header" id="sec-560a"><input type="checkbox" id="check">
+        <nav>
+            <div class="icon">RENT-<b style="color: red;">I</b>T</div>
+            <ol>
+                <li>
+                    <a href="/host">home</a>
+                </li>
+                <li>
+                    <a href="/about">about</a>
+                </li>
+                <li>
+                    <a href="/hostuserprofile">account</a>
+                </li>
+                <li>
+                    <a href="/logout">logout</a>
+                </li>
+                <li>
+                    <a href="/switch">switch</a>
+                </li>
+            </ol>
+            <label for="check" class="bar">
+                <span class="fa fa-bars" id="bars"></span>
+                <span class="fa fa-times" id="times"></span>
+            </label>
+        </nav>
+    </header>
+<h2>Update Places</h2>
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between">
+            <a href="/host" class="border-shadow">
+                <span class="text-gradient">New Place<i class="fa-solid fa-house"></i></span>
+            </a>
+        </div>
+
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    
+                    <tr>
+                        <th>Property Name</th>
+                        <th>Property Type</th>
+                        <th>Space Type</th>
+                        <th>Number of Guests</th>
+                        <th>Number of Bedrooms</th>
+                        <th>Number of Bathrooms</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <% for(var i = 0;i < data.length; i++){%>
+                    <tr>
+
+                        <td><%= data[i].name %></td>
+                        <td><%= data[i].property_type %></td>
+                        <td><%= data[i].space_type %></td>
+                        <td><%= data[i].num_guests %></td>
+                        <td><%= data[i].num_beds %></td>
+                        <td><%= data[i].num_baths %></td>
+                        <td><%= data[i].price %></td>
+                        <td>
+                            <a href="/updatePlacesForm?id=<%= data[i].place_id %>" class="btn border-shadow update">
+                                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+                            </a>
+                            <a class="btn border-shadow delete">
+                                <span class="text-gradient"><i class="fas fa-times"></i></span>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <%} %>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>

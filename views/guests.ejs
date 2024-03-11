@@ -1,0 +1,105 @@
+<%- include ('_header') -%>
+
+<div class="u-section-5">
+    <div class="container">
+        <!-- <div class="forms-container"> -->
+                <form action="/auth/search" method="POST" class="search-form">
+                    <h2 class="u-text u-text-default u-text-1">Search Here</h2>
+                    <form action="/auth/search" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 5px;">
+
+                        <div class="col-md-6">
+                         <label for="date-87de" class="u-label">Check-In Date</label>
+                         <input type="date" placeholder="MM/DD/YYYY" id="date-87de" name="date" class="u-border-1 u-border-grey-25 u-input u-input-rectangle u-white" required="">
+                       </div>
+
+
+                       <div class="col-md-6">
+                        <label for="date-bf9e" class="u-label">Check-Out Date</label>
+                        <input type="date" placeholder="MM/DD/YYYY" id="date-bf9e" name="date1" class="u-border-1 u-border-grey-25 u-input u-input-rectangle u-white" required="">
+                      </div>
+
+
+                      <div class="col-md-6">
+                        <label for="email-a94e" class="u-label">Guests</label>
+                        <input type="number" placeholder="Guests" id="numguests-a94e" name="numguests" class="u-border-1 u-border-grey-25 u-input u-input-rectangle u-white" autofocus="autofocus" required="required">
+                      </div>
+
+
+
+
+
+                      <div class="col-md-6">
+                        <label for="select-20b6" class="u-label">Country</label>
+                        <div class="u-form-select-wrapper">
+                          <select id="select-20b6" name="country" class="u-border-1 u-border-grey-25 u-input u-input-rectangle u-white">
+                            <option value="Pakistan">Pakistan</option>
+                          </select>
+                        </div>
+                      </div>
+
+
+
+
+
+
+                      <div class="col-md-6">
+                        <label for="select-2784" class="u-label">Province</label>
+                        <div class="u-form-select-wrapper">
+                          <select id="select-2784" name="province" class="u-border-1 u-border-grey-25 u-input u-input-rectangle u-white">
+                            <option value="Sindh">Sindh</option>
+                            <option value="Balochistan">Balochistan</option>
+                            <option value="Khyber Pakhtunkhwa">Khyber Pakhtunkhwa</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Islamabad">Islamabad Capital Territory</option>
+                            <option value="Azad Jammu and Kashmir">Azad Jammu and Kashmir</option>
+                            <option value="Gilgit-Baltistan">Gilgit-Baltistan</option>
+                          </select>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6">
+                        <label for="select-d322" class="u-label">City</label>
+                        <div class="u-form-select-wrapper">
+                          <select id="select-d322" name="city" class="u-border-1 u-border-grey-25 u-input u-input-rectangle u-white">
+                            <option value="Karachi">Karachi</option>
+                            <option value="Lahore">Lahore</option>
+                            <option value="Faisalabad">Faisalabad</option>
+                            <option value="Rawalpindi">Rawalpindi</option>
+                            <option value="Gujranwala">Gujranwala</option>
+                            <option value="Peshawar">Peshawar</option>
+                            <option value="Multan">Multan</option>
+                            <option value="Hyderabad City">Hyderabad City</option>
+                            <option value="Islamabad">Islamabad</option>
+                            <option value="Quetta">Quetta</option>
+                            <option value="Bahawalpur">Bahawalpur</option>
+                            <option value="Sargodha">Sargodha</option>
+                            <option value="Sialkot City">Sialkot City</option>
+                            <option value="Larkana">Larkana</option>
+                            <option value="Chiniot">Chiniot</option>
+                            <option value="Shekhupura">Shekhupura</option>
+                            <option value="Jhang City">Jhang City</option>
+                            <option value="Dera Ghazi Khan">Dera Ghazi Khan</option>
+                            <option value="Gujrat">Gujrat</option>
+                            <option value="Rahimyar Khan">Rahimyar Khan</option>
+                            <option value="Kasur">Kasur</option>
+                            <option value="Mardan">Mardan</option>
+                            <option value="Nawabshah">Nawabshah</option>
+                            <option value="Sahiwal">Sahiwal</option>
+                            <option value="Kotli">Kotli</option>
+                            <option value="Rawala Kot">Rawala Kot</option>
+                            <option value="Skardu">Skardu</option>
+                            <option value="Hunza Valley">Hunza Valley</option>
+                            <option value="Mansehra District">Mansehra District</option>
+                            <option value="Diamer District">Diamer District</option>
+                          </select>
+                        </div>
+                      </div>
+
+
+                    <input type="submit" class="u-btn-9" value="search">
+                </form>
+        <!-- </div>  -->
+    </div>
+  </div>  
+    <%- include ('_footer') -%>

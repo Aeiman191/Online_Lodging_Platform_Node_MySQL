@@ -1,0 +1,56 @@
+<%- include ('_header') -%>
+<div class="u-section-6">
+<div class="container pt-5 pb-5" >
+  <div class="row">
+    <div class="col-6"><h1>Reserved Places</h1></div>
+</div>
+
+    <table class="table table-bordered table-striped"  >
+        <thead class="thread-dark">
+          <tr>
+            <th scope="col">Serial Number</th>
+            <th scope="col">Customer ID</th>
+            <th scope="col">Place ID</th>
+            <th scope="col">Number of Guests</th>
+            <th scope="col">Number of Guests</th>
+            <th scope="col">Check In Date</th>
+            <th scope="col">Check Out Date</th>
+            <th scope="col">Status</th>
+            <th scope="col" class="text-end">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% if(data.length){
+ 
+                for(var i = 0; i< data.length; i++) {%>  
+          <tr>
+            <td><%= data[i].serial_no %></td> 
+            <td><%= data[i].cust_id %></td>
+            <td><%= data[i].place_id %></td>
+            <td><%= data[i].num_guests %></td>
+            <td><%= data[i].num_nights %></td>
+            <td><%= data[i].checkin_date%></td>
+            <td><%= data[i].checkin_date %></td>
+            <td><%= data[i].status %></td>
+            <td class="text-end"> 
+            <form action="/auth/reject" method="POST">
+               <div>Confirm Serial No<input type="text" name="serial_no" class="col-6"></div>
+               <div>Confirm Customer ID<input type="text" name="cust_id" class="col-6"></div>
+               <div>Confirm Place ID<input type="text" name="place_id" class="col-6"></div>
+              <input type="submit" class="btn btn-light btn-small" value="Reject"><i class="bi bi-journal-plus"></i>
+            </form>
+            </td>
+          </tr>
+          <% }
+           
+   }else{ %>
+       <tr>
+          <td colspan="3">No Reservations</td>
+       </tr>
+    <% } %> 
+
+        </tbody>
+      </table>
+</div>
+</div>
+<%- include ('_footer') -%>

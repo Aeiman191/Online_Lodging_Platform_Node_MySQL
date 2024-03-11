@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer-container {
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 5rem;
+    transition: 1.8s ease-in-out;
+}
+
+.footer {
+    height: 15vh;
+    background-color: none;
+    color: rgb(198, 172, 201);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-heading {
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h1 {
+    margin-bottom: 2rem;
+    column-gap: normal;
+    color: rgb(188, 230, 175);
+    margin-right: 10;
+    max-height: fit-content;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-heading h2 {
+    margin-bottom: 0;
+    font-size: xx-large;
+}
+
+.footer-heading a {
+    color: rgb(215, 241, 238);
+    text-decoration: navy;
+    margin-bottom: 5px;
+    font-size: large;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* Add a hover effect if you want */
+
+
+/* .fa:hover {
+    opacity: 0.7;
+} */
+
+.fa-whatsapp {
+    background: none;
+    /* color: rgb(45, 204, 204); */
+}
+
+.fa-instagram {
+    background: none;
+    /* color: rgb(114, 189, 185); */
+}
+
+.icon {
+    font-size: xx-large;
+}

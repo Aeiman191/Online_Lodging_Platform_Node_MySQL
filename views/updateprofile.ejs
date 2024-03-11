@@ -1,0 +1,22 @@
+<%- include ('_header') -%>
+    <div class="container">
+        <form action="/auth/updateprofile" method="POST">
+
+            <label for="f_name">First Name</label>
+            <input type="text" id="f_name" name="firstname" placeholder="first name">
+
+            <label for="l_name">Last Name</label>
+            <input type="text" id="l_name" name="lastname" placeholder="last name">
+
+            <label for="pwsd">New Password</label>
+            <input type="password" id="pwsd" name="pwsd" placeholder="Enter password">
+
+            <label for="conpwsd">Confirm new Password</label>
+            <input type="password" id="conpwsd" name="conpwsd" placeholder="Confirm password ">
+
+            <!-- <button class="button button4"><a href="/userprofile" >Update</button></a> -->
+            <input type="submit" class="btn solid" value="Update">
+
+        </form>
+    </div>
+    <%- include ('_footer') -%>

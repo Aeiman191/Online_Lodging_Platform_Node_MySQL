@@ -1,0 +1,59 @@
+<%- include ('_header') -%>
+   <!-- JavaScript Bundle with Popper -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  -->
+<div class="u-section-6">
+<div class="container pt-5 pb-5" >
+
+    <div class="row">
+        <div class="col-6"><h1>Searched Places</h1></div>
+        <div class="col-6 d-flex justify-content-end">
+            <a href="/filter" type="button" class="btn btn-primary align-self-center">Filter</a>
+        </div>
+    </div>
+    <table class="table table-bordered table-striped"  >
+        <thead class="thread-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Place ID</th>
+            <th scope="col">Place Name</th>
+            <th scope="col">Space Type</th>
+            <th scope="col">Price</th>
+            <th scope="col">Beds</th>
+            <th scope="col">Baths</th>
+            <th scope="col" class="text-end">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% if(data.length){
+ 
+                for(var i = 0; i< data.length; i++) {%>  
+          <tr>
+            <th scope="row"><%= (i+1) %></th>
+            <td><%= data[i].place_id %></td>
+            <td><%= data[i].name %></td>
+            <td><%= data[i].space_type %></td>
+            <td><%= data[i].price %></td>
+            <td><%= data[i].num_beds %></td>
+            <td><%= data[i].num_baths %></td>
+            <td class="text-end"> 
+              <form action="/auth/book" method="POST">
+                Confirm Place ID <input type="text" name="place_id" class="col-6">
+              <input type="submit" class="btn btn-light btn-small" value="Book"><i class="bi bi-journal-plus"></i>
+            </form>
+            </td>
+          </tr>
+          <% }
+           
+   }else{ %>
+       <tr>
+          <td colspan="3">No place</td>
+       </tr>
+    <% } %> 
+
+        </tbody>
+      </table>
+      <!-- <input type="submit" class="btn btn-light btn-small" value="Book"> -->
+
+</div>
+</div>
+<%- include ('_footer') -%>

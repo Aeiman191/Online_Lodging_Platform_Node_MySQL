@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="​hosts">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Hosts</title>
+    <link rel="stylesheet" href="/styles/nicepage1.css" media="screen">
+    <link rel="stylesheet" href="/styles/updatePlacesForm.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/scripts/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/scripts/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.10.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+
+
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/default-logo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="recipes">
+    <meta property="og:type" content="website">
+</head>
+
+<body class="u-body u-xl-mode">
+    <header class="u-clearfix u-header u-header" id="sec-560a"><input type="checkbox" id="check">
+        <nav>
+            <div class="icon">RENT-<b style="color: red;">I</b>T</div>
+            <ol>
+                <li>
+                    <a href="/host">home</a>
+                </li>
+                <li>
+                    <a href="/about">about</a>
+                </li>
+                <li>
+                    <a href="/hostuserprofile">account</a>
+                </li>
+                <li>
+                    <a href="/logout">logout</a>
+                </li>
+                <li>
+                    <a href="/switch">switch</a>
+                </li>
+            </ol>
+            <label for="check" class="bar">
+                <span class="fa fa-bars" id="bars"></span>
+                <span class="fa fa-times" id="times"></span>
+            </label>
+        </nav>
+    </header>
+    <section class="u-clearfix u-gradient u-section-1" id="sec-9083">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h3 class="u-text u-text-default u-text-1"> Update Your Propoerty</h3>
+            <div class="u-align-center u-border-1 u-border-grey-75 u-form u-grey-5 u-radius-50 u-form-1">
+                <form action="/auth/updatePlace" method="POST"
+                    class="u-clearfix u-form-custom-backend u-form-spacing-31 u-form-vertical u-inner-form"
+                    source="custom" name="form" style="padding: 50px;" redirect="true">
+                    <div class="u-form-group u-form-group-1">
+                        <label for="text-9284" class="u-label u-text-palette-5-dark-3 u-label-1">Property Name</label>
+                        <input type="text" placeholder="Name" id="text-9284" name="propertyName"
+                            class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white">
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-2">
+                        <label for="select-b4f0" class="u-label u-text-palette-5-dark-3 u-label-2">Property Type</label>
+                        <div class="u-form-select-wrapper">
+                            <select id="select-b4f0" name="propertyType"
+                                class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white">
+                                <option value="-">-</option>
+                                <option value="Apartment">Apartment</option>
+                                <option value="House">House</option>
+                                <option value="Bed and Bath">Bed and Bath</option>
+                                <option value="Hotel">Hotel</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
+                                <path fill="currentColor" d="M4 8L0 4h8z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-3">
+                        <label for="select-8927" class="u-label u-text-palette-5-dark-3 u-label-3">Space Type</label>
+                        <div class="u-form-select-wrapper">
+                            <select id="select-8927" name="spaceType"
+                                class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white">
+                                <option value="-">-</option>
+                                <option value="Entire House">Entire House</option>
+                                <option value="Private Room">Private Room</option>
+                                <option value="Shared Room">Shared Room</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
+                                <path fill="currentColor" d="M4 8L0 4h8z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-4">
+                        <label for="select-0615" class="u-label u-text-palette-5-dark-3 u-label-4">Number of
+                            Guests</label>
+                        <div class="u-form-select-wrapper">
+                            <select id="select-0615" name="noGuests"
+                                class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white">
+                                <option value="-">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
+                                <path fill="currentColor" d="M4 8L0 4h8z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-5">
+                        <label for="select-321f" class="u-label u-text-palette-5-dark-3 u-label-5">Number of
+                            Bedrooms</label>
+                        <div class="u-form-select-wrapper">
+                            <select id="select-321f" name="numBeds"
+                                class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white">
+                                <option value="-">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
+                                <path fill="currentColor" d="M4 8L0 4h8z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-6">
+                        <label for="select-1060" class="u-label u-text-palette-5-dark-3 u-label-6">Number of
+                            Bathrooms</label>
+                        <div class="u-form-select-wrapper">
+                            <select id="select-1060" name="numBaths"
+                                class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white">
+                                <option value="-">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
+                                <path fill="currentColor" d="M4 8L0 4h8z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-7">
+                        <label for="select-3c67" class="u-label u-text-palette-5-dark-3 u-label-7">Amenities 1</label>
+                        <div class="u-form-select-wrapper">
+                            <select id="select-3c67" name="Amenities1"
+                                class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white">
+                                <option value="-">-</option>
+                                <option value="Pool">Pool</option>
+                                <option value="WiFi">WiFi</option>
+                                <option value="Hot tub">Hot tub</option>
+                                <option value="TV">TV</option>
+                                <option value="BBQ Grill">BBQ Grill</option>
+                                <option value="Air Conditioning">Air Conditioning</option>
+                                <option value="Fire Pit">Fire Pit</option>
+                                <option value="Washer">Washer</option>
+                                <option value="Outdoor Dining Area">Outdoor Dining Area</option>
+                                <option value="Kitchen">Kitchen</option>
+                                <option value="Indoor Fireplace">Indoor Fireplace</option>
+                                <option value="Free Parking">Free Parking</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
+                                <path fill="currentColor" d="M4 8L0 4h8z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-8">
+                        <label for="select-f42e" class="u-label u-text-palette-5-dark-3 u-label-8">Amenities 2</label>
+                        <div class="u-form-select-wrapper">
+                            <select id="select-f42e" name="Amenities2"
+                                class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white">
+                                <option value="-">-</option>
+                                <option value="Pool">Pool</option>
+                                <option value="WiFi">WiFi</option>
+                                <option value="Hot tub">Hot tub</option>
+                                <option value="TV">TV</option>
+                                <option value="BBQ Grill">BBQ Grill</option>
+                                <option value="Air Conditioning">Air Conditioning</option>
+                                <option value="Fire Pit">Fire Pit</option>
+                                <option value="Washer">Washer</option>
+                                <option value="Outdoor Dining Area">Outdoor Dining Area</option>
+                                <option value="Kitchen">Kitchen</option>
+                                <option value="Indoor Fireplace">Indoor Fireplace</option>
+                                <option value="Free Parking">Free Parking</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
+                                <path fill="currentColor" d="M4 8L0 4h8z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-9">
+                        <label for="select-c573" class="u-label u-text-palette-5-dark-3 u-label-9">Amenities 3</label>
+                        <div class="u-form-select-wrapper">
+                            <select id="select-c573" name="Amenities3"
+                                class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white">
+                                <option value="-">-</option>
+                                <option value="Pool">Pool</option>
+                                <option value="WiFi">WiFi</option>
+                                <option value="Hot tub">Hot tub</option>
+                                <option value="TV">TV</option>
+                                <option value="BBQ Grill">BBQ Grill</option>
+                                <option value="Air Conditioning">Air Conditioning</option>
+                                <option value="Fire Pit">Fire Pit</option>
+                                <option value="Washer">Washer</option>
+                                <option value="Outdoor Dining Area">Outdoor Dining Area</option>
+                                <option value="Kitchen">Kitchen</option>
+                                <option value="Indoor Fireplace">Indoor Fireplace</option>
+                                <option value="Free Parking">Free Parking</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
+                                <path fill="currentColor" d="M4 8L0 4h8z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="u-form-group u-form-group-10">
+                        <label for="text-0764" class="u-label u-text-palette-5-dark-3 u-label-10">Price</label>
+                        <input type="text" placeholder="Price" id="text-0764" name="Price"
+                            class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white">
+                    </div>
+                    
+                    
+                    <div class="u-align-left u-form-group u-form-submit">
+                        <a href="#"
+                            class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-palette-2-dark-1 u-radius-50 u-btn-1">Update</a>
+                        <input type="submit" value="submit" class="u-form-control-hidden">
+                    </div>
+                    <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                    <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors
+                        then try again. </div>
+                    <input type="hidden" value="" name="recaptchaResponse">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<%- include ('_footer') -%>

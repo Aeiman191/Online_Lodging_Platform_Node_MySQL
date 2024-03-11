@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in </title>
+    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="/auth/login" method="POST" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-phone"></i>
+                        <input type="text" name="phone" placeholder="Phonenumber" id="phone" class="phone" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" placeholder="Password" id="password" class="password" required>
+                    </div>
+                    <input type="submit" class="btn solid" value="login">
+                </form>
+            </div>
+        </div> 
+    </div>
+
+
+
+    
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New Here?</h3>
+                    <p>
+                        Sign up today.
+                    </p>
+                    <button class="btn transparent" id="sign-up-button"><a href="/signup" >Sign Up</button></a>
+                </div>
+                <img src="/images/2.png" alt="" class="image">
+                </div>
+            </div>
+        
+       
+    </div>
+    <script src="/scripts/signup.js"></script>
+
+</body>
+
+</html>
